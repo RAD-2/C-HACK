@@ -1,0 +1,37 @@
+showpaylodls = '''
+Name|          |Explanation             |Paylod ID
+1-              Scripet paython          scripet\python\explanation 
+'''
+Help = '''
+?                 help
+show paylodls
+naw paylod  
+'''
+############################################
+def nawpaylod ():
+    host = input ("#:>set LHOST ->> ")
+    print ("#:-HOST-.>>",host)
+    port = input ("#:>set LPORT ->> ") 
+    print ("#:-PORT-.>>",port)
+    home ()
+
+def home ():
+    hom = str(input ("#  ->> "))
+    if (hom == "?"):
+        print (Help)
+        home ()
+    elif (hom == "show paylodls"):
+        print (showpaylodls)
+        home ()
+    elif (hom == "naw paylod -id scripet\python\explanation"):
+        nawpaylod ()
+    else:
+        print ("#:>>404 Err. NOT Faound ")
+        home ()
+
+
+
+
+
+if __name__ == '__main__':
+    home()
